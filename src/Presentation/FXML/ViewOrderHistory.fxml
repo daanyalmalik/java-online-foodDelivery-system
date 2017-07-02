@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="420.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.FXMLController.ViewOrderHistoryController">
+    <stylesheets>
+        <URL value="@/Presentation/CSS/vieworderhistory.css" />
+    </stylesheets>
+   <children>
+      <ListView fx:id="orderlist" layoutX="6.0" prefHeight="436.0" prefWidth="449.0" />
+   </children>
+</AnchorPane>

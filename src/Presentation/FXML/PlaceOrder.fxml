@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="685.0" prefWidth="996.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.FXMLController.PlaceOrderController">
+    <stylesheets>
+        <URL value="@/Presentation/CSS/placeorder.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="-6.0" prefHeight="691.0" prefWidth="1000.0" style="-fx-background-color: #67BB7D;" styleClass="mainFxmlClass" stylesheets="@../CSS/placeorder.css">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="32.0" layoutY="29.0" onAction="#goBack" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: lightgreen;" text="Back" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <ListView fx:id="menulist" layoutX="48.0" layoutY="253.0" prefHeight="399.0" prefWidth="355.0" />
+            <ImageView fx:id="profile_pic" fitHeight="150.0" fitWidth="200.0" layoutX="453.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect></ImageView>
+            <JFXListView fx:id="payment" layoutX="708.0" layoutY="252.0" prefHeight="232.0" prefWidth="248.0" />
+            <JFXListView fx:id="caculation" layoutX="708.0" layoutY="484.0" prefHeight="71.0" prefWidth="127.0" />
+            <JFXButton fx:id="checkout" layoutX="730.0" layoutY="597.0" onAction="#proceedToCheckout" style="-fx-background-color: pink;" text="Button" />
+            <JFXListView fx:id="caculation1" layoutX="829.0" layoutY="484.0" prefHeight="71.0" prefWidth="127.0" />
+            <Label fx:id="error" layoutX="747.0" layoutY="565.0" prefHeight="17.0" prefWidth="165.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

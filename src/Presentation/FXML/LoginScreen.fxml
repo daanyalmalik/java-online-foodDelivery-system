@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="491.0" prefWidth="645.0" styleClass="mainFxmlClass" stylesheets="@../CSS/loginscreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.FXMLController.LoginScreenController">
+   <children>
+      <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="179.0" layoutY="329.0" onAction="#makelogin" prefHeight="46.0" prefWidth="101.0" ripplerFill="#bcb2b2" style="-fx-background-color: #29c654;" text="Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="signup" buttonType="RAISED" layoutX="367.0" layoutY="329.0" onAction="#RegisterUser" prefHeight="46.0" prefWidth="101.0" ripplerFill="#9a8e8e" style="-fx-background-color: #29c654;" text="Signup">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="username" focusColor="#29c654" labelFloat="true" layoutX="163.0" layoutY="163.0" maxWidth="320.0" minWidth="228.0" prefHeight="43.0" prefWidth="320.0" promptText="Username" unFocusColor="#9a9898">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="password" focusColor="#29c654" labelFloat="true" layoutX="163.0" layoutY="239.0" maxWidth="320.0" minWidth="228.0" prefHeight="46.0" prefWidth="320.0" promptText="Password" unFocusColor="#6f6f6f">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="error" layoutX="144.0" layoutY="295.0" prefHeight="17.0" prefWidth="358.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

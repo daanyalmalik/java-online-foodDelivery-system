@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="thepane" prefHeight="551.0" prefWidth="761.0" styleClass="mainFxmlClass" stylesheets="@../CSS/ordernowscreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.FXMLController.OrderNowScreenController">
+   <children>
+      <JFXDrawer fx:id="profile" prefHeight="481.0" prefWidth="6.0">
+         <effect>
+            <DropShadow color="#000000c1" />
+         </effect></JFXDrawer>
+      <JFXButton fx:id="changeButton" buttonType="RAISED" layoutX="567.0" layoutY="373.0" onAction="#ChangeOrder" prefHeight="32.0" prefWidth="144.0" style="-fx-background-color: #2dd55c;" text="Change Order" />
+      <JFXButton fx:id="cancelButton" buttonType="RAISED" layoutX="567.0" layoutY="329.0" onAction="#CancelOrder" prefHeight="32.0" prefWidth="144.0" style="-fx-background-color: #2dd55c;" text="Cancel Order" />
+      <Pane prefHeight="43.0" prefWidth="761.0" style="-fx-background-color: orange;">
+         <children>
+            <Label fx:id="welcome" layoutX="113.0" layoutY="16.0" text="Label" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Label>
+            <JFXHamburger fx:id="hamburger" layoutX="711.0" layoutY="12.0" onDragDetected="#openDrawer" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <ImageView fx:id="profile_pic" fitHeight="58.0" fitWidth="64.0" layoutX="36.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="ordernow" layoutX="527.0" layoutY="481.0" onAction="#OrderNowpage" prefHeight="43.0" prefWidth="208.0" style="-fx-background-color: #29c654;" text="Order Now!">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <TabPane fx:id="tabs" layoutX="19.0" layoutY="72.0" prefHeight="457.0" prefWidth="457.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="tab1" text="Order History">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="428.0" prefWidth="453.0" />
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <ImageView fx:id="slides" fitHeight="282.0" fitWidth="200.0" layoutX="539.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" />
+      <AmbientLight color="CHARTREUSE" lightOn="true" />
+      <JFXButton fx:id="changeButton1" buttonType="RAISED" layoutX="567.0" layoutY="421.0" onAction="#logout" prefHeight="32.0" prefWidth="144.0" style="-fx-background-color: #2dd55c;" text="Logout" />
+   </children>
+</AnchorPane>

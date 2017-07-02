@@ -1,0 +1,10 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+-fx-background-image: url("/Presentation/images/bg9.jpg");
+  
+    -fx-background-size: 810 480;
+    -fx-background-position: center center;
+}

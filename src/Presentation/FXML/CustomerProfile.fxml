@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="136.0" styleClass="mainFxmlClass" stylesheets="@../CSS/customerprofile.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller = "Presentation.FXMLController.CustomerProfileController">
+   <children>
+      <JFXButton fx:id="track" onAction="#TrackOrders" prefHeight="45.0" prefWidth="96.0" style="-fx-background-color: #29c654;" text="Track Order" />
+   </children>
+</VBox>

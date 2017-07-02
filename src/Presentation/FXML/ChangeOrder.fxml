@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="646.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.FXMLController.ChangeOrderController">
+    <stylesheets>
+        <URL value="@/Presentation/CSS/changeorder.css" />
+    </stylesheets>
+   <children>
+      <Text layoutX="27.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact us at +9221-35297835-7 and we can change your order for you." wrappingWidth="565.2353515625">
+         <font>
+            <Font name="Segoe UI Semibold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="101.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="However, if the delivery has been discharged already, " wrappingWidth="467.2353515625">
+         <font>
+            <Font name="Segoe UI Semibold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="217.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="no changes can be made." wrappingWidth="264.2353515625">
+         <font>
+            <Font name="Segoe UI Semibold" size="17.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="33.0" onAction="#goBack" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: lightgreen;" text="Back" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

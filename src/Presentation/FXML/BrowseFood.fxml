@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="173.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Presentation.FXMLController.BrowseFoodController">
+    <stylesheets>
+        <URL value="@/Presentation/CSS/browsefood.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="serach" layoutX="20.0" layoutY="25.0" onAction="#getResteraunts" prefHeight="25.0" prefWidth="101.0" promptText="        Search" />
+      <Button fx:id="fastfood" layoutX="36.0" layoutY="108.0" mnemonicParsing="false" onAction="#FastFood" prefHeight="25.0" prefWidth="101.0" text="Fast Food" />
+      <Button fx:id="coffee" layoutX="36.0" layoutY="142.0" mnemonicParsing="false" onAction="#CoffeeHouse" prefHeight="25.0" prefWidth="101.0" text="Coffee Houses" />
+      <Button fx:id="bakery" layoutX="36.0" layoutY="177.0" mnemonicParsing="false" onAction="#Bakeries" prefHeight="25.0" prefWidth="101.0" text="Bakeries" />
+      <Button fx:id="pizza" layoutX="36.0" layoutY="208.0" mnemonicParsing="false" onAction="#Pizzas" prefHeight="25.0" prefWidth="101.0" text="Pizza" />
+      <Button fx:id="bbq" layoutX="36.0" layoutY="243.0" mnemonicParsing="false" onAction="#BBQS" prefHeight="25.0" prefWidth="101.0" text="Barbeque" />
+      <Button fx:id="go" layoutX="121.0" layoutY="25.0" mnemonicParsing="false" onAction="#goButton" text="Go" />
+   </children>
+</AnchorPane>

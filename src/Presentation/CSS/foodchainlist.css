@@ -1,0 +1,6 @@
+.mainFxmlClass {
+-fx-background-image: url("/Presentation/images/list.jpg");
+  
+    -fx-background-size: 810 495;
+    -fx-background-position: center center;
+}

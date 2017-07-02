@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="623.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.FXMLController.RegisterationController">
+    <stylesheets>
+        <URL value="@/Presentation/CSS/registeration.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="firstname" layoutX="35.0" layoutY="73.0" maxWidth="194.0" minWidth="182.0" prefHeight="43.0" prefWidth="182.0" promptText="First Name">
+         <font>
+            <Font name="Segoe UI Semibold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="repassword" layoutX="428.0" layoutY="272.0" maxWidth="182.0" minWidth="167.0" prefHeight="43.0" prefWidth="167.0" promptText="Re-enter Password">
+         <font>
+            <Font name="Segoe UI Semibold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="lastname" layoutX="226.0" layoutY="73.0" maxWidth="182.0" minWidth="182.0" prefHeight="43.0" prefWidth="182.0" promptText="Last Name">
+         <font>
+            <Font name="Segoe UI Semibold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="username" layoutX="40.0" layoutY="272.0" maxWidth="182.0" minWidth="182.0" prefHeight="43.0" prefWidth="182.0" promptText="Username">
+         <font>
+            <Font name="Segoe UI Semibold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="password" layoutX="228.0" layoutY="272.0" maxWidth="182.0" minWidth="182.0" prefHeight="43.0" prefWidth="182.0" promptText="Password">
+         <font>
+            <Font name="Segoe UI Semibold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="month" layoutX="292.0" layoutY="196.0" promptText="Month" />
+      <JFXComboBox fx:id="day" layoutX="206.0" layoutY="196.0" promptText="Day" />
+      <JFXComboBox fx:id="Year" layoutX="392.0" layoutY="196.0" promptText="Year" />
+      <Label fx:id="dob" layoutX="270.0" layoutY="153.0" prefHeight="31.0" prefWidth="123.0" text="Date of Birth" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Semibold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="email" layoutX="428.0" layoutY="73.0" maxWidth="182.0" minWidth="167.0" prefHeight="43.0" prefWidth="167.0" promptText="Email">
+         <font>
+            <Font name="Segoe UI Semibold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="address" alignment="CENTER" layoutX="81.0" layoutY="326.0" maxWidth="476.0" minWidth="158.0" prefHeight="43.0" prefWidth="476.0" promptText="                                              Address">
+         <font>
+            <Font name="Segoe UI Semibold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="submit" buttonType="RAISED" layoutX="248.0" layoutY="399.0" onAction="#makeRegisteration" prefHeight="18.0" prefWidth="167.0" style="-fx-background-color: lightgreen;" text="Submit" />
+      <Label fx:id="error" layoutX="31.0" layoutY="437.0" prefHeight="20.0" prefWidth="559.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="23.0" layoutY="23.0" onAction="#goBack" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: lightgreen;" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
